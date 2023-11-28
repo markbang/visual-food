@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="icon" href="/favicon.ico">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>瓜头鲸 | 数据可视化</title>
+  </head>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+    }
+
+    #video-background {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    #app {
+      /* 添加其他内容的样式，确保不被覆盖 */
+      position: relative;
+      z-index: 1;
+    }
+    #video-container {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      z-index: -1;
+    }
+    </style>
+  <body>
+    <div id="video-container">
+    <video id="video-background" autoplay muted loop>
+      <source src="./back.mp4" type="video/mp4">
+      浏览器不支持加载背景视频
+    </video>
+    </div>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
