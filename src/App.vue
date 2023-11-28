@@ -25,9 +25,10 @@
         <swiper-slide>Slide 2</swiper-slide>
       </swiper>
     </div>
-    <BarChart />
-    <PieSimple />
-    <p>Hello world!</p>
+  <br>
+  <h1 color=#4d0707>团队文档</h1>
+  <Docs gitBookUrl="https://www.yuque.com/wohangwosu-bsdua/hmx6os?# 《团队文档》"/>
+  
 </template>
 
 <script setup>
@@ -41,8 +42,8 @@ import 'swiper/css/pagination';
 
 import './style.css';
 import Teammates from './components/Teammates.vue';
-
-import BarChart from './components/BarChart.vue' // 确保你有这个文件
+import Docs from './components/Docs.vue';
+import BarChart from './components/BarChart.vue'
 import myEchartStyle from "@/assets/myEchartStyle.json"
 import { THEME_KEY } from "vue-echarts"
 
