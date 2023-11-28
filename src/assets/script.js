@@ -3,5 +3,5 @@ $(document).ready(function() {
     setTimeout(function() {
         $('#loading-container').hide();
         $('#app').show();
-    }, 1000);
+    });
 });
