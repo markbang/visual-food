@@ -1,57 +1,68 @@
+
 <template>
-    <div class="team-member">
-      <div class="avatar">
-        <img :src="member.avatar" alt="Avatar">
-      </div>
-      <div class="info">
-        <h3>{{ member.name }}</h3>
-        <p>{{ member.profession }}</p>
-      </div>
-    </div>
+  <div class="hover-link" @mouseover="startHoverAnimation" @mouseout="stopHoverAnimation">
+    <a :href="link" class="link-text">{{ text }}</a>
+  </div>
 </template>
-  
-<script setup>
-  const props = {
-    member: {
-      type: Object,
-      required: true,
+
+<script>
+export default {
+  props: {
+    text: String, 
+    link: String, 
+  },
+  data() {
+    return {
+      isHovered: false,
+    };
+  },
+  methods: {
+    startHoverAnimation() {
+      this.isHovered = true;
     },
-  }
+    stopHoverAnimation() {
+      this.isHovered = false;
+    },
+  },
+};
 </script>
-  
+
 <style scoped>
-  .team-member {
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    padding: 20px;
-  }
-  
-  .avatar {
-    width: 80px;
-    height: 80px;
-    border-radius: 50%;
-    overflow: hidden;
-    margin-bottom: 10px;
-  }
-  
-  .avatar img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-  }
-  
-  h3 {
-    margin: 0;
-  }
-  
-  p {
-    margin: 5px 0;
-    color: #666;
-  }
+.hover-link {
+  display: inline-block;
+  position: relative;
+}
+
+.link-text {
+  font-size: 18px; 
+  text-decoration: none;
+  color: #333;
+}
+
+.hover-link:hover .link-text {
+  color: rgb(63, 4, 4);
+  transition: color 0.3s ease;
+}
+.hover-link:hover {
+  box-shadow: 0 0 10px rgba(76, 2, 11, 0.8);
+  transition: box-shadow 0.3s ease;
+}
+
+.hover-link:hover::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  background-color: rgb(63, 4, 4);
+  bottom: 0;
+  left: 0;
+  transform: scaleX(0);
+  transform-origin: bottom right;
+  transition: transform 0.3s ease;
+}
+
+.hover-link:hover::before {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
 </style>
-  

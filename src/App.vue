@@ -1,25 +1,33 @@
 <template>
-  <a href="https://www.heywhale.com/org/hsb/competition/area/6539eff4e621c857923f596e/content">
-    <img src="./assets/logo.png" alt="一只瓜头鲸" height="110" width="110" >
-  </a>
-      <div class="rounded-swiper">
-        <swiper
-          :cssMode="true"
-          :navigation="true"
-          :pagination="true"
-          :mousewheel="true"
-          :keyboard="true"
-          :modules="modules"
-          :touchStartPreventDefault="false" 
-          class="mySwiper"
-        > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug
-          <swiper-slide><div><PieSimple /></div></swiper-slide>
-          <swiper-slide><div><BarChart /></div></swiper-slide>
-          <swiper-slide>Slide 2</swiper-slide>
-        </swiper>
-      </div>
-      <BarChart />
-      <PieSimple />
+    <a href="https://www.heywhale.com/org/hsb/competition/area/6539eff4e621c857923f596e/content">
+      <img src="./assets/logo.png" alt="一只瓜头鲸" height="110" width="110" >
+    </a>
+  <br>
+  <Teammates text="陈浩楠" link="https://www.heywhale.com/home/user/profile/655710d2b4dec7c8eb23da3b/overview" /> | 
+  <Teammates text="龚天阳" link="https://example.com" /> | 
+  <Teammates text="刘畅" link="https://example.com" /> | 
+  <Teammates text="王棒棒" link="https://www.heywhale.com/home/user/profile/64859c80f7b6f2558a1196c1/overview" />
+  <br>
+  <br>
+    <div class="rounded-swiper">
+      <swiper
+        :cssMode="true"
+        :navigation="true"
+        :pagination="true"
+        :mousewheel="true"
+        :keyboard="true"
+        :modules="modules"
+        :touchStartPreventDefault="false" 
+        class="mySwiper"
+      > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug
+        <swiper-slide><div><PieSimple /></div></swiper-slide>
+        <swiper-slide><div><BarChart /></div></swiper-slide>
+        <swiper-slide>Slide 2</swiper-slide>
+      </swiper>
+    </div>
+    <BarChart />
+    <PieSimple />
+    <p>Hello world!</p>
 </template>
 
 <script setup>
@@ -32,6 +40,7 @@ import 'swiper/css/navigation';
 import 'swiper/css/pagination';
 
 import './style.css';
+import Teammates from './components/Teammates.vue';
 
 import BarChart from './components/BarChart.vue' // 确保你有这个文件
 import myEchartStyle from "@/assets/myEchartStyle.json"
@@ -102,7 +111,7 @@ h2 {
   }
 }
 .mySwiper {
-  width: 60%;
+  width: 68%;
   height: 100%;
   border: 4px solid rgb(99, 7, 22); /* 设置边框样式和颜色 */
   border-radius: 30px; /* 设置圆角半径 */
