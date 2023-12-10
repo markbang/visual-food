@@ -9,6 +9,7 @@
   },
   "dependencies": {
     "@vue/composition-api": "^1.7.2",
+    "axios": "^1.6.2",
     "echarts": "^5.4.3",
     "markdown-it": "^13.0.2",
     "swiper": "^11.0.5",

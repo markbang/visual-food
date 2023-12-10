@@ -20,12 +20,13 @@
         :touchStartPreventDefault="false" 
         class="mySwiper"
       > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug
-        <swiper-slide><div><PieSimple /></div></swiper-slide>
+        <swiper-slide><div><TreeMap /></div></swiper-slide>
         <swiper-slide><div><BarChart /></div></swiper-slide>
-        <swiper-slide>Slide 2</swiper-slide>
+        <swiper-slide><div><MapBar /></div></swiper-slide>
       </swiper>
     </div>
   <br>
+  <Geo />
   <h1 color=#4d0707>团队文档</h1>
   <Docs gitBookUrl="https://www.yuque.com/wohangwosu-bsdua/hmx6os?# 《团队文档》"/>
   
@@ -33,7 +34,6 @@
 
 <script setup>
 import { ref, provide } from 'vue'
-import PieSimple from './components/PieSimple.vue'
 import { Swiper, SwiperSlide } from 'swiper/vue';
 import 'swiper/css';
 
@@ -48,6 +48,9 @@ import myEchartStyle from "@/assets/myEchartStyle.json"
 import { THEME_KEY } from "vue-echarts"
 
 import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
+import MapBar from './components/MapBar.vue';
+import TreeMap from './components/TreeMap.vue';
+import Geo from './components/Geo.vue';
 const modules = [Navigation, Pagination, Mousewheel, Keyboard];
 provide(THEME_KEY, myEchartStyle)
 </script>
