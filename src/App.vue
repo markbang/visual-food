@@ -4,8 +4,8 @@
     </a>
   <br>
   <Teammates text="陈浩楠" link="https://www.heywhale.com/home/user/profile/655710d2b4dec7c8eb23da3b/overview" /> | 
-  <Teammates text="龚天阳" link="https://example.com" /> | 
-  <Teammates text="刘畅" link="https://example.com" /> | 
+  <Teammates text="龚天阳" link="https://www.heywhale.com/home/user/profile/645f1097588c2196b3455d5b/overview" /> | 
+  <Teammates text="刘畅" link="https://www.heywhale.com/home/user/profile/655c3718c7ee8c5bc1d05b77/overview" /> | 
   <Teammates text="王棒棒" link="https://www.heywhale.com/home/user/profile/64859c80f7b6f2558a1196c1/overview" />
   <br>
   <br>
