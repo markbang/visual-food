@@ -1,6 +1,11 @@
 <template>
-    <v-example id="geo" title="各地区餐馆数量" desc="(按照餐馆类型分类)">
+    <v-example id="geo" title="上海市餐馆地图" desc="(详细数据)">
       <v-chart class="chart" :option="option" autoresize />
+      <template #extra>
+        <p class="actions">
+          <button @click="loade">加载</button>
+        </p>
+      </template>
     </v-example>
 </template>
 
@@ -12,7 +17,8 @@ import { registerMap } from 'echarts/core'
 import geo_data from '@/assets/shanghai.json';
 import ad_data from '@/assets/经纬.json';
 registerMap('shanghai', geo_data)
-const option = ref({
+const option = ref({})
+const goption = ref({
     tooltip: {
       show: true,
       enterable: true,
@@ -77,6 +83,9 @@ const option = ref({
       }
     ]
 })
+const loade = () => {
+    option.value = goption.value
+}
 </script>
 
 <style scoped>

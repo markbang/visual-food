@@ -261,10 +261,10 @@ select {
 
     select,
     label {
-      border: 1px solid #4fc08d;
+      border: 1px solid #4f0408;
       border-radius: 2em;
       background-color: #fff;
-      color: #42b983;
+      color: #9c0613;
       cursor: pointer;
       transition: opacity 0.3s;
     }
@@ -279,7 +279,7 @@ select {
       line-height: 2em;
       max-width: 40vw;
       border-radius: 0.5em;
-      font-size: 0.8em;
+      font-size: 1.8em;
     }
 
     input[type="checkbox"] {
