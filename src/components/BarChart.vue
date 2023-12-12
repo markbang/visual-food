@@ -1,5 +1,5 @@
 <template>
-  <v-example id="bardrill" title="各地区均价" desc="(每个菜系)">
+  <v-example id="bardrill" title="各地区人均价格均值" desc="(每个菜系)">
     <v-chart class="chart" :option="option" autoresize />
   </v-example>
 </template>

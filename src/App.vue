@@ -23,6 +23,7 @@
         <swiper-slide><div><TreeMap /></div></swiper-slide>
         <swiper-slide><div><BarChart /></div></swiper-slide>
         <swiper-slide><div><MapBar /></div></swiper-slide>
+        <swiper-slide><div><TimeLine /></div></swiper-slide>
       </swiper>
     </div>
   <br>
@@ -51,6 +52,7 @@ import { Navigation, Pagination, Mousewheel, Keyboard } from 'swiper/modules';
 import MapBar from './components/MapBar.vue';
 import TreeMap from './components/TreeMap.vue';
 import Geo from './components/Geo.vue';
+import TimeLine from './components/TimeLine.vue';
 const modules = [Navigation, Pagination, Mousewheel, Keyboard];
 provide(THEME_KEY, myEchartStyle)
 </script>
