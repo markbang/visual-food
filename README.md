@@ -1,21 +1,21 @@
 # visual-food
 
-可视化项目
+可视化项目  团队：瓜头鲸
 
-## Project Setup
+大众点评的店铺数据分析与可视化
 
-```sh
-pnpm install
-```
+>网站基于vue3 + [vue-echarts](https://github.com/ecomfe/vue-echarts)
 
-### Compile and Hot-Reload for Development
+>数据分析基于Python, MySQL和SPSS
 
-```sh
-pnpm dev
-```
-
-### Compile and Minify for Production
-
-```sh
-pnpm build
+# 项目结构
+```bash
+├── spider
+│   ├── main.py      //爬虫主程序
+├── src
+│   ├── assets       //静态资源（包含处理过的数据）
+│   ├── components   //图表组件
+├── analysis
+│   ├── data         //数据
+│   ├── main         //分析代码
 ```
