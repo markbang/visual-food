@@ -19,7 +19,8 @@
         :modules="modules"
         :touchStartPreventDefault="false" 
         class="mySwiper"
-      > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug
+      > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug\
+        <swiper-slide><div><Welcome /></div></swiper-slide>
         <swiper-slide><div><TreeMap /></div></swiper-slide>
         <swiper-slide><div><BarChart /></div></swiper-slide>
         <swiper-slide><div><MapBar /></div></swiper-slide>
@@ -53,6 +54,7 @@ import MapBar from './components/MapBar.vue';
 import TreeMap from './components/TreeMap.vue';
 import Geo from './components/Geo.vue';
 import TimeLine from './components/TimeLine.vue';
+import Welcome from './components/Welcome.vue';
 const modules = [Navigation, Pagination, Mousewheel, Keyboard];
 provide(THEME_KEY, myEchartStyle)
 </script>
