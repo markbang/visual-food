@@ -10,7 +10,7 @@ import VExample from "./Example.vue";
 const option = ref({
   tooltip: {
     trigger: 'item',
-    formatter: '{a} <br/>{b} : {c} ({d}%)'
+    formatter: '{b} : {c} ({d}%)'
   },
   legend: {
     bottom: 10,
