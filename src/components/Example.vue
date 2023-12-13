@@ -46,8 +46,8 @@ defineProps({
 
   .echarts {
     width: calc(60vw + 4em);
-    height: 360px;
-    max-width: 720px;
+    height: 36px;
+    max-width: 750px;
     padding: 1.5em 2em;
     border: 1px solid rgba(0, 0, 0, 0.1);
     border-radius: 8px;

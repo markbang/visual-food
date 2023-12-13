@@ -7,22 +7,44 @@
 <script setup>
 import { ref } from "vue";
 import VExample from "./Example.vue";
-import time_data from "@/assets/营业时间.json"
+import multipliedData from "@/assets/营业时间.json"
+function getRandomColor() {
+  const letters = '0123456789ABCDEF';
+  let color = '#';
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+}
+const xAxisData = multipliedData[0][Object.keys(multipliedData[0])[0]].map(item => item.time);
+const seriesData = multipliedData.map(district => {
+  const districtName = Object.keys(district)[0];
+  const districtValues = district[districtName].map(item => item.value);
+
+  return {
+    name: districtName,
+    type: 'line',
+    smooth: true,
+    data: districtValues,
+    lineStyle: {
+        color: getRandomColor()
+      }
+  };
+});
+const legendData = multipliedData.map(district => {
+  const districtName = Object.keys(district)[0];
+  return [districtName];
+});
 const option = ref({
   xAxis: {
     type: 'category',
-    data: time_data.map(item => item.time)
+    data: xAxisData
   },
   yAxis: {
     type: 'value'
   },
-  series: [
-    {
-      data: time_data.map(item => item.value),
-      type: 'line',
-      smooth: true
-    }
-  ],
+  series: seriesData,
+  legend: legendData,
   tooltip: {
     trigger: 'axis',
     formatter: function(params) {

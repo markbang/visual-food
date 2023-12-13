@@ -46,7 +46,7 @@ const option = ref({
     text: ''
   },
   tooltip: {
-    trigger: 'axis',
+    trigger: 'item',
     axisPointer: {
       type: 'cross',
       label: {

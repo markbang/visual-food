@@ -9,7 +9,7 @@
   <Teammates text="王棒棒" link="https://www.heywhale.com/home/user/profile/64859c80f7b6f2558a1196c1/overview" />
   <br>
   <br>
-    <div class="rounded-swiper">
+    <div class="rounded-swiper" style="height: auto; width: auto;">
       <swiper
         :cssMode="true"
         :navigation="true"

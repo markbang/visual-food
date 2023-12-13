@@ -156,6 +156,6 @@ const loade1 = () => {
 
 <style scoped>
 .chart {
-  height: 400px;
+  height: 500px;
 }
 </style>
