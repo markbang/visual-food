@@ -44,10 +44,31 @@ const mapOption = reactive({
     text: ['High', 'Low'],
     calculable: true
   },
+  title: {
+        text: '上海市各区消费中位数',
+        subtext: '地图Json数据来自GeoJSON',
+        sublink:
+          'https://geojson.cn/'
+      },
+  toolbox: {
+        show: true,
+        orient: 'vertical',
+        feature: {
+          restore: {},
+          saveAsImage: {}
+        }
+      },
+  tooltip: {
+    trigger: 'item',
+    formatter: '{b}<br/>{c} (元/人)'
+  },
   series: [
     {
       id: 'population',
       type: 'map',
+      label: {
+        show: true
+      },
       roam: true,
       map: 'shanghai',
       animationDurationUpdate: 1000,

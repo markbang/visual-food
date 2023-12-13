@@ -1,5 +1,5 @@
 <template>
-    <v-example id="timeline" title="营业时间" desc="(每个时间段)">
+    <v-example id="timeline" title="营业餐馆数量" desc="(每个时间段)">
       <v-chart class="chart" :option="option" autoresize />
     </v-example>
 </template>

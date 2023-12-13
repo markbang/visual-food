@@ -24,6 +24,7 @@
         <swiper-slide><div><TreeMap /></div></swiper-slide>
         <swiper-slide><div><BarChart /></div></swiper-slide>
         <swiper-slide><div><MapBar /></div></swiper-slide>
+        <swiper-slide><div><PieS /></div></swiper-slide>
         <swiper-slide><div><TimeLine /></div></swiper-slide>
       </swiper>
     </div>
@@ -55,6 +56,7 @@ import TreeMap from './components/TreeMap.vue';
 import Geo from './components/Geo.vue';
 import TimeLine from './components/TimeLine.vue';
 import Welcome from './components/Welcome.vue';
+import PieS from './components/PieS.vue';
 const modules = [Navigation, Pagination, Mousewheel, Keyboard];
 provide(THEME_KEY, myEchartStyle)
 </script>

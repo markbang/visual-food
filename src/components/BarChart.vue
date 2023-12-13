@@ -59,7 +59,7 @@ const option = ref({
   },
   toolbox: {
     feature: {
-      saveAsImage: {}
+      restore: { show: true }
     }
   },
   grid: {
