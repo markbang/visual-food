@@ -15,7 +15,7 @@ const option = ref({
   legend: {
     bottom: 10,
     left: 'center',
-    data: ['2-3', '3-4', '4-5']
+    data: ['0-3', '3-3.5', '3.5-4', '4-4.5', '4.5-5']
   },
   toolbox: {
     show: true,
@@ -33,12 +33,11 @@ const option = ref({
       center: ['50%', '50%'],
       selectedMode: 'single',
       data: [
-        {
-          value: 56101,
-          name: '3-4',
-        },
-        { value: 26732, name: '4-5' },
-        { value: 114, name: '2-3' }
+        { value: 8477, name: '4.5-5',},
+        { value: 19214, name: '4-4.5' },
+        { value: 48741, name: '3.5-4' },
+        { value: 11582, name: '3-3.5' },
+        { value: 116, name: '0-3' }
       ],
       emphasis: {
         itemStyle: {
