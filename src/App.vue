@@ -22,10 +22,10 @@
       > // 添加touchStartPreventDefault属性 不阻止事件 解决点击无效bug\
         <swiper-slide><div><Welcome /></div></swiper-slide>
         <swiper-slide><div><TreeMap /></div></swiper-slide>
+        <swiper-slide><div><TimeLine /></div></swiper-slide>
         <swiper-slide><div><BarChart /></div></swiper-slide>
         <swiper-slide><div><MapBar /></div></swiper-slide>
         <swiper-slide><div><PieS /></div></swiper-slide>
-        <swiper-slide><div><TimeLine /></div></swiper-slide>
       </swiper>
     </div>
   <br>

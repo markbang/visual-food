@@ -46,14 +46,12 @@ const option = ref({
   series: seriesData,
   legend: legendData,
   tooltip: {
-    trigger: 'axis',
-    formatter: function(params) {
-      // params 是一个数组，包含鼠标悬浮的所有数据
-      const time = params[0].axisValue; // x 轴的时间
-      const value = params[0].data; // 对应时间点的值
-
-      // 返回自定义的提示框内容
-      return `${time}: ${value}个`;
+    trigger: 'item',
+    axisPointer: {
+      type: 'cross',
+      label: {
+        backgroundColor: '#6a7985'
+      }
     }
   }
 });
