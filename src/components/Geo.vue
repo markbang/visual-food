@@ -32,6 +32,9 @@ const goption2 = ref({
       },
       trigger: 'item'
     },
+    title: {
+      text: '星级>4为蓝色 <4为红色'
+    },
     geo: {
       map: 'shanghai',
       roam: true,
@@ -94,6 +97,9 @@ const goption1 = ref({
                 环境：${params.value[2].环境}`;
       },
       trigger: 'item'
+    },
+    title: {
+      text: '星级>4为蓝色 <4为红色'
     },
     geo: {
       map: 'shanghai',
