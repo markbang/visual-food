@@ -1,5 +1,5 @@
 <template>
-    <v-example id="welcome" title="Welocme！" desc="(一切从这里开始)">
+    <v-example id="welcome" title="Welocme！" desc="(2022大众点评上海餐饮店铺数据可视化)">
       <v-chart class="chart" :option="option" autoresize />
     </v-example>
 </template>
